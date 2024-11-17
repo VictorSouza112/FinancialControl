@@ -1,0 +1,135 @@
+/* Estilos para tela de receitas */
+body {
+    background: #222;
+    color: #F1EBD5;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.adicionar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #4338CA;
+    color: #F1EBD5;
+    border: 1px solid #F1EBD5;
+    border-radius: 5px;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 1.1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease;
+}
+
+.adicionar:hover {
+    background: #F1EBD5;
+    color: #4338CA;
+    border: 1px solid #4338CA;
+}
+
+/* Estilos para o modal */
+.modal-title {
+    color: #4338CA;
+    font-size: 1.5rem;
+}
+
+.modal-body input, label, h4, p {
+    color: black;
+}
+
+.modal-footer .fechar {
+    background-color: #FF6B6B; /* Vermelho claro */
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.modal-footer .salvar {
+    background-color: #4338CA; /* Azul do site */
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+table {
+    align-items: center;
+    padding: .5rem .5rem;
+    width: 700px;
+}
+
+th, td {
+    padding: 0.7rem;
+    border-bottom: 1px solid #fff;
+}
+
+th {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: #4338CA;
+}
+
+td {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.funções {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.editar {
+    background: #4338CA;
+    border: 1px solid #F1EBD5;
+    color: #F1EBD5;
+    border-radius: 5px;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease;
+}
+
+.editar:hover {
+    background: #F1EBD5;
+    color: #4338CA;
+    border: 1px solid #4338CA;
+}
+
+.excluir {
+    background: #4338CA;
+    border: 1px solid #F1EBD5;
+    color: #F1EBD5;
+    border-radius: 5px;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease;
+}
+
+.excluir:hover {
+    background: #F1EBD5;
+    color: #4338CA;
+    border: 1px solid #4338CA;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .adicionar, .editar, .excluir {
+        font-size: 0.9rem;
+    }
+    table {
+        width: 1%;
+    }
+}

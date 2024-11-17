@@ -1,0 +1,147 @@
+/* styleCriptomoeda.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin-top: 9rem;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home-user,
+.home-crypto,
+.home-criptomoedas,
+.home-receitas,
+.home-sair {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #4338CA;
+}
+
+.home-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-crypto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-crypto h2 {
+    margin-bottom: 10px;
+}
+
+.home-crypto table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.home-crypto th,
+.home-crypto td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #fff;
+}
+
+.home-crypto th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+.home-crypto td:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-crypto img {
+    width: 20px;
+    height: 20px;
+}
+
+.variacao-crypto {
+    color: #00ff00;
+}
+
+/* Estilos para tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #fff;
+}
+
+th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+.info-criptomoedas,
+.info-receitas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-criptomoedas p,
+.info-receitas p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.home-sair {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    background-color: #FFFFFF; /* Botão verde */
+    color: #222;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .home-user,
+    .home-crypto,
+    .home-criptomoedas,
+    .home-receitas,
+    .home-sair {
+        width: 100%;
+    }
+}

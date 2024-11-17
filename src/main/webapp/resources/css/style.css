@@ -1,0 +1,165 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #181818;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #6633F1;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.botao {
+    background-color: #4338CA;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #584cc8;
+}
+
+/* Main */
+main {
+    padding: 2rem 0;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.imagem {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.imagem img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.texto p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #6633F1;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imagem {
+        margin-bottom: 2rem;
+    }
+
+    .botoes {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .botoes button {
+        margin-bottom: 1rem;
+    }
+}
